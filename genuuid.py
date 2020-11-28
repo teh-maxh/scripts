@@ -8,8 +8,8 @@ if(len(sys.argv) == 1):
 	quit();
 
 if(len(sys.argv) == 2):
-	import socket
-	domain = socket.gethostname().split('.', 1)[1]
+	from socket import gethostname
+	domain = gethostname().split('.', 1)[1]
 	name = sys.argv[1];
 
 if(len(sys.argv) == 3):
