@@ -5,7 +5,8 @@ import random
 try:
 	import hotbits
 except ImportError:
-	quit("Please install hotbits. (pip install hotbits)")
+	print("Please install hotbits. (pip install hotbits)")
+	quit()
 
 if (len(sys.argv) == 1):
 	roll = [1,6]
@@ -26,4 +27,4 @@ else:
 	for i in range(roll[0]):
 		result.append(random.randint(1,roll[1]))
 
-quit(result)
+print(result)
