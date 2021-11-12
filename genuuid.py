@@ -3,16 +3,18 @@
 import uuid
 import sys
 
-if(len(sys.argv) == 1):
+argc = len(sys.argv)
+
+if(argc == 1 or argc > 3):
 	print("Usage: genuuid [domain] name");
 	quit();
 
-if(len(sys.argv) == 2):
+if(argc == 2):
 	from socket import gethostname
 	domain = gethostname().split('.', 1)[1]
 	name = sys.argv[1];
 
-if(len(sys.argv) == 3):
+if(argc == 3):
 	domain = sys.argv[1];
 	name = sys.argv[2];
 
