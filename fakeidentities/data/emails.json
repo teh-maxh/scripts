@@ -1,0 +1,26 @@
+{
+	"localPartStyles": [
+		"first.last",
+		"last.first",
+		"firstlast",
+		"lastfirst",
+		"first.last",
+		"last.first",
+		"flast",
+		"lastf",
+		"firstl",
+		"lfirst"
+	],
+	"domains": [
+		"dayrep.com",
+		"jourrapide.com",
+		"einrot.com",
+		"gustr.com",
+		"cuvox.de",
+		"armyspy.com",
+		"rhyta.com",
+		"fleckens.hu",
+		"superrito.com",
+		"teleworm.us"
+	]
+}
