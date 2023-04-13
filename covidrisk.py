@@ -14,6 +14,7 @@ countyData = json.loads(urllib.request.urlopen(f"https://api.covidactnow.org/v2/
 
 factors = [stateData['riskLevels']['caseDensity'],stateData['riskLevels']['infectionRate'],stateData['riskLevels']['testPositivityRatio'],countyData['riskLevels']['caseDensity'],countyData['riskLevels']['infectionRate'],stateData['riskLevels']['testPositivityRatio']]
 i = 0
+allKnown = True
 for n in factors:
 	if (n == 4):
 		allKnown = False
